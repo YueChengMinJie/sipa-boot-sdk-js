@@ -30,6 +30,12 @@ module.exports = defineConfig({
         if (format === "umd") {
           return `${bundlePrefix}.js`
         }
+        if (format === 'es') {
+          return `${bundlePrefix}.mjs`
+        }
+        if (format === 'cjs') {
+          return `${bundlePrefix}.cjs`
+        }
         return `${bundlePrefix}.${format}.js`
       },
     },

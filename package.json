@@ -1,20 +1,19 @@
 {
   "name": "sipa-boot-sdk-js",
   "version": "1.0.0",
-  "main": "dist/index.js",
   "scripts": {
     "serve": "vite",
     "test": "jest --coverage",
-    "build:dev": "vite build -w",
+    "watch-build": "vite build -w",
     "build": "rimraf dist && vite build",
     "nexus": "sh nexus.sh"
   },
+  "main": "dist/index.js",
   "keywords": [
-    "框架",
     "js sdk"
   ],
   "author": "caszhou",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.35.4",
     "@rollup/plugin-typescript": "^11.1.1",
